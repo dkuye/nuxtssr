@@ -44,6 +44,9 @@ export default defineNuxtConfig({
 
   //
   runtimeConfig: {
+    apiUrl: '',
+    apiKey: '',
+
     // Public
     public: {
       apiUrl: '',

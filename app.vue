@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ config.public.apiUrl }}</h1>
+    <h1>{{ config.apiUrl }}</h1>
 
     <NuxtWelcome />
   </div>
@@ -9,7 +9,7 @@
 <script setup lang="ts">
 const config = useRuntimeConfig()
 
-console.log('config.public.apiUrl', config.public.apiUrl)
+console.log('config.apiUrl', config.apiUrl)
 </script>
 
 <style scoped>
