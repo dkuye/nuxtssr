@@ -44,8 +44,8 @@ export default defineNuxtConfig({
 
   // Run time config
   runtimeConfig: {
-    apiUrl: '',
-    apiKey: ''
+    apiUrl: process.env.NUXT_API_URL || '',
+    apiKey: process.env.NUXT_API_KEY || ''
 
     // Public
     /* public: {

@@ -3,6 +3,7 @@
     <div class="pad">
       <h1>config.apiUrl</h1>
       <h2>{{ config.apiUrl }}</h2>
+      <h2></h2>
     </div>
     <NuxtWelcome />
   </div>
