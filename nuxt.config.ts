@@ -54,5 +54,13 @@ export default defineNuxtConfig({
     }
   },
 
+  nitro: {
+    awsAmplify: {
+      // catchAllStaticFallback: true,
+      // imageOptimization: { "/_image", cacheControl: "public, max-age=3600, immutable" },
+      // imageSettings: { ... },
+    }
+  },
+
   devtools: { enabled: true }
 })
