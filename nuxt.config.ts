@@ -42,16 +42,16 @@ export default defineNuxtConfig({
   // SSR
   ssr: true,
 
-  //
+  // Run time config
   runtimeConfig: {
     apiUrl: '',
-    apiKey: '',
+    apiKey: ''
 
     // Public
-    public: {
+    /* public: {
       apiUrl: '',
       apiKey: ''
-    }
+    } */
   },
 
   nitro: {
