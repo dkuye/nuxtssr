@@ -46,12 +46,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiUrl: process.env.API_URL || '',
     apiKey: process.env.API_KEY || ''
-
-    // Public
-    /* public: {
-      apiUrl: '',
-      apiKey: ''
-    } */
   },
 
   nitro: {
