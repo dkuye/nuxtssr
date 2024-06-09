@@ -12,4 +12,9 @@ const config = useRuntimeConfig()
 console.log('config.public.apiUrl', config.public.apiUrl)
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  color: rgb(4, 100, 209);
+  font-size: 2rem;
+}
+</style>

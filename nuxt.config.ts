@@ -39,6 +39,9 @@ export default defineNuxtConfig({
     }
   },
 
+  // SSR
+  ssr: true,
+
   //
   runtimeConfig: {
     // Public
