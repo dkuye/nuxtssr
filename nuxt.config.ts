@@ -61,7 +61,12 @@ export default defineNuxtConfig({
     async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => {
         // @ts-expect-error
-        config.plugins.push(vuetify())
+        config.plugins.push(
+          vuetify({
+            //autoImport: true
+            styles: { configFile: 'assets/css/settings.scss' }
+          })
+        )
       })
     }
   ],
@@ -95,9 +100,12 @@ export default defineNuxtConfig({
   // Google Fonts
   googleFonts: {
     families: {
-      Lato: {
-        wght: [400, 700, 900]
+      'Space Grotesk': {
+        wght: [300, 400, 500, 600, 700]
       },
+      /* Lato: {
+        wght: [400, 700, 900]
+      }, */
       Poppins: {
         wght: [400, 500, 600, 700, 800, 900]
       }

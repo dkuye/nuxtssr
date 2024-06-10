@@ -1,3 +1,25 @@
-@use 'vuetify/settings' with (
-  $button-height: 40px
-);
+@use 'variables';
+
+@use 'vuetify/settings'
+  with(
+    // body
+    $body-font-family: variables.$bodyFont,
+    $heading-font-family: variables.$headingFont,
+    $font-size-root: 1.4rem,
+    $border-radius-root: 5px,
+    // v-btn
+    $button-text-letter-spacing: 0,
+    $button-font-weight: 600,
+
+    // v-lable
+    $label-color: #000,
+
+    // v-field
+    $field-outline-opacity: 0.2,
+    $field-border-width: 1px,
+    $text-field-border-radius: 5px
+  );
+
+p {
+  margin-bottom: 20px;
+}
