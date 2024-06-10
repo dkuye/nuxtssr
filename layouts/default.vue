@@ -1,7 +1,7 @@
 <template>
   <div style="width: 100%; min-width: 360px; height: auto; padding-top: 10px">
-    <div class="d-flex ga-5">
-      <VBtn to="/">Home</VBtn>
+    <div class="d-flex ga-5 ml-5">
+      <VBtn to="/" color="primary">Home</VBtn>
       <VBtn to="/about">About</VBtn>
     </div>
 
