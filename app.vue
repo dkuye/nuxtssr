@@ -6,9 +6,11 @@
     </div>
   </div> -->
   <NuxtLayout>
-    <NuxtLoadingIndicator :height="6" color="repeating-linear-gradient(to right,#16994C 0%,#8AFFBB 50%,#16994C 100%)" />
-    <!-- <NotificationAlert /> -->
-    <NuxtPage />
+    <v-app>
+      <NuxtLoadingIndicator :height="6" color="repeating-linear-gradient(to right,#16994C 0%,#8AFFBB 50%,#16994C 100%)" />
+      <!-- <NotificationAlert /> -->
+      <NuxtPage />
+    </v-app>
   </NuxtLayout>
 </template>
 

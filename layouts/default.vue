@@ -1,9 +1,10 @@
 <template>
-  <div style="width: 100%; min-width: 360px; height: auto; padding-top: 110px">
-    <ul>
-      <li><NuxtLink to="/">Home</NuxtLink></li>
-      <li><NuxtLink to="/about">About</NuxtLink></li>
-    </ul>
+  <div style="width: 100%; min-width: 360px; height: auto; padding-top: 10px">
+    <div class="d-flex ga-5">
+      <VBtn to="/">Home</VBtn>
+      <VBtn to="/about">About</VBtn>
+    </div>
+
     <slot />
   </div>
 </template>

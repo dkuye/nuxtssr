@@ -1,6 +1,10 @@
 <template>
   <div>
     <h1>About page</h1>
+    <div>
+      Operatives of the Ibadan Zonal Directorate of the Economic and Financial Crimes Commission, EFCC, have arrested One Hundred and Twenty Seven
+      (127) suspected internet fraudsters in Ondo State.
+    </div>
   </div>
 </template>
 
