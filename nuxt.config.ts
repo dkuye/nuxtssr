@@ -37,7 +37,8 @@ export default defineNuxtConfig({
           href: '/favicon.svg'
         }
       ]
-    }
+    },
+    buildAssetsDir: 'eclass'
   },
 
   // SSR
