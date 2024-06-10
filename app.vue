@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <!--   <div>
     <div class="pad">
       <h1>config.apiUrl</h1>
       <h2>{{ config.apiUrl }}</h2>
-      <!-- fffff -->
     </div>
-    <NuxtWelcome />
-  </div>
+  </div> -->
+  <NuxtLayout>
+    <NuxtLoadingIndicator :height="6" color="repeating-linear-gradient(to right,#16994C 0%,#8AFFBB 50%,#16994C 100%)" />
+    <!-- <NotificationAlert /> -->
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -14,17 +17,4 @@ const config = useRuntimeConfig()
 console.log('config.apiUrl', config.apiUrl)
 </script>
 
-<style scoped>
-.pad {
-  padding: 40px;
-  text-align: center;
-}
-h1 {
-  color: rgb(4, 100, 209);
-  font-size: 2rem;
-}
-h2 {
-  color: rgb(4, 100, 209);
-  font-size: 1.2rem;
-}
-</style>
+<style scoped></style>
