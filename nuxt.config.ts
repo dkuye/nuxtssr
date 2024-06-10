@@ -51,14 +51,21 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/google-fonts',
-    (_options, nuxt) => {
+    /* (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => {
         // @ts-expect-error
         config.plugins.push(vuetify({ autoImport: true }))
       })
+    } */
+    // Vuetify
+    async (options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', config => {
+        // @ts-expect-error
+        config.plugins.push(vuetify())
+      })
     }
-    //...
   ],
+
   vite: {
     vue: {
       template: {
