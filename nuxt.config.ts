@@ -50,6 +50,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxtjs/google-fonts',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => {
         // @ts-expect-error
@@ -82,6 +83,20 @@ export default defineNuxtConfig({
 
   typescript: {
     typeCheck: true
+  },
+
+  // Google Fonts
+  googleFonts: {
+    families: {
+      Lato: {
+        wght: [400, 700, 900]
+      },
+      Poppins: {
+        wght: [400, 500, 600, 700, 800, 900]
+      }
+    },
+    download: false,
+    useStylesheet: true
   },
 
   devtools: { enabled: true }
