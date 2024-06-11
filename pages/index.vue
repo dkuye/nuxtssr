@@ -1,6 +1,10 @@
 <template>
   <div>
     <h1>Home</h1>
+    <div class="text-h1">Lorem Ipsum</div>
+
+    <div class="text-overline">group gang</div>
+    <div class="text-caption">group gang</div>
 
     <p>
       Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it

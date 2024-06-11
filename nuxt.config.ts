@@ -109,8 +109,11 @@ export default defineNuxtConfig({
       /* Lato: {
         wght: [400, 700, 900]
       }, */
-      Poppins: {
+      /* Poppins: {
         wght: [400, 500, 600, 700, 800, 900]
+      }, */
+      Gwendolyn: {
+        wght: [400, 700]
       }
     },
     download: false,

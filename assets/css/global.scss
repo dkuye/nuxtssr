@@ -2,6 +2,43 @@
 
 * {
   font-family: v.$bodyFont;
+  //font-size: 1rem;
+}
+
+// Heading font family
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: v.$headingFont;
+}
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6 {
+  font-family: v.$headingFont !important;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
   font-size: 1rem;
 }
 
