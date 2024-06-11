@@ -63,8 +63,8 @@ export default defineNuxtConfig({
         // @ts-expect-error
         config.plugins.push(
           vuetify({
-            //autoImport: true
-            styles: { configFile: 'assets/css/settings.scss' }
+            autoImport: true
+            //styles: { configFile: 'assets/css/settings.scss' }
           })
         )
       })
@@ -78,6 +78,9 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  // Global CSS
+  css: ['~/assets/css/global.scss'],
 
   // Run time config
   runtimeConfig: {

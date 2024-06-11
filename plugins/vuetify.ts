@@ -28,7 +28,7 @@ export default defineNuxtPlugin(app => {
     // global css defaults
     defaults: {
       VBtn: {
-        style: [{ textTransform: 'none' }, { borderRadius: '20px' }]
+        style: [{ textTransform: 'none' }, { borderRadius: '20px' }, { fontWeight: '600' }]
       }
     },
 
