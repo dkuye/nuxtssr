@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kryptr</title>
+    <style>
+      /* svg path {
+        fill: none;
+        stroke: #16994c;
+        stroke-width: 2;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: trace 3s linear forwards;
+      }
+
+      @keyframes trace {
+        to {
+          stroke-dashoffset: 0;
+        }
+      } */
+      #eShape {
+        animation: eShape 1s linear forwards;
+      }
+      /* eShape trace outline */
+      @keyframes eShape {
+        0% {
+          fill: none;
+          stroke: #16994c;
+          stroke-width: 2;
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+        }
+        100% {
+          fill: white;
+          stroke: none;
+          stroke-width: none;
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      #myCircle {
+        animation: myCircle 1s linear forwards;
+      }
+      @keyframes myCircle {
+        0% {
+          opacity: 0;
+        }
+        60% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      #shadowEffect {
+        animation: shadowEffect 1s linear forwards;
+      }
+      @keyframes shadowEffect {
+        0% {
+          transform: scale(1.5, 1);
+        }
+        40% {
+          transform: scale(1.1, 1);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center">
+      <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_512_15)">
+          <circle cx="100" cy="100" r="100" fill="#16994C" id="myCircle" />
+          <path
+            id="shadowEffect"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M102.333 40.0445C70.2777 41.2703 44.6667 67.6443 44.6667 100C44.6667 132.356 70.2777 158.73 102.333 159.955C101.559 159.985 100.781 160 100 160C66.8629 160 40 133.137 40 100C40 66.8629 66.8629 40 100 40C100.781 40 101.559 40.0149 102.333 40.0445Z"
+            fill="#47C57B"
+          />
+          <path
+            id="eShape"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M100 20C140.65 20 174.219 50.3191 179.327 89.5774L147.333 111.333H83.9999L51.647 89.3332H159.055C154.022 61.2848 129.497 39.9999 100 39.9999C66.8629 39.9999 40 66.8628 40 99.9999C40 133.137 66.8629 160 100 160C119.233 160 136.353 150.95 147.333 136.876V164.501C134.079 174.244 117.712 180 100 180C55.8172 180 20 144.183 20 100C20 55.8172 55.8172 20 100 20Z"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_512_15">
+            <rect width="200" height="200" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </body>
+</html>
